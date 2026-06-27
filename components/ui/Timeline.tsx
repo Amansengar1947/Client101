@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { motion } from "framer-motion"
+import { motion, HTMLMotionProps } from "framer-motion"
 import { cn } from "@/lib/utils"
 
 interface TimelineProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -24,7 +24,7 @@ export function Timeline({ children, className, ...props }: TimelineProps) {
   )
 }
 
-interface TimelineItemProps extends React.HTMLAttributes<HTMLDivElement> {
+interface TimelineItemProps extends Omit<HTMLMotionProps<"div">, "children"> {
   icon?: React.ReactNode
   number: number
   title: string
