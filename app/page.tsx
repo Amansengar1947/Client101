@@ -1,11 +1,9 @@
-import dynamic from 'next/dynamic';
 import { Hero } from "@/components/sections/Hero";
-
-const OurApproach = dynamic(() => import("@/components/sections/OurApproach").then(mod => mod.OurApproach), { ssr: true });
-const FeaturedProject = dynamic(() => import("@/components/sections/FeaturedProject").then(mod => mod.FeaturedProject), { ssr: true });
-const Statistics = dynamic(() => import("@/components/sections/Statistics").then(mod => mod.Statistics), { ssr: true });
-const ProcessTimeline = dynamic(() => import("@/components/sections/ProcessTimeline").then(mod => mod.ProcessTimeline), { ssr: true });
-const ContactCTA = dynamic(() => import("@/components/sections/ContactCTA").then(mod => mod.ContactCTA), { ssr: true });
+import { OurApproach } from "@/components/sections/OurApproach";
+import { FeaturedProject } from "@/components/sections/FeaturedProject";
+import { Statistics } from "@/components/sections/Statistics";
+import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
+import { ContactCTA } from "@/components/sections/ContactCTA";
 
 export default function Home() {
   const jsonLd = {
