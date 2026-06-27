@@ -42,6 +42,7 @@ export function TimelineItem({
   ...props 
 }: TimelineItemProps) {
   return (
+    // @ts-expect-error - React 19 / Framer Motion type conflict for onDrag
     <motion.div 
       className={cn("relative flex-1 flex flex-col lg:items-center pl-16 lg:pl-0 lg:pt-16 group", className)}
       initial={{ opacity: 0, y: 30 }}
