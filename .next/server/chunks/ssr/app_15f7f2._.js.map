@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/icon.svg.mjs (structured image object)"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 32, height: 32 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,wGAAA,CAAA,UAAG;IAAE,OAAO;IAAI,QAAQ;AAAG"}},
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
